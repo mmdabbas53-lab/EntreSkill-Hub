@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Enter Skills</title>
+    <link rel="stylesheet" href="./style.css"><a href="form.html">
+    <button>Try Another Skill</button>
+</a>
+</head>
+<body>
+    <h2>Your Business Idea</h2>
+<p><strong>Skill:</strong> <span id="skillText"></span></p>
+<p><strong>Idea:</strong> <span id="resultText"></span></p><script>
+    document.getElementById("skillText").innerText =
+        localStorage.getItem("skill");
+
+    document.getElementById("resultText").innerText =
+        localStorage.getItem("idea");
+</script>
+</body>
+</html>
